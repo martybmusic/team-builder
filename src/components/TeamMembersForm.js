@@ -10,7 +10,7 @@ function TeamMembersForm (props) {
 
     const changeBuild = event => {
         event.preventDefault()
-        build
+        build()
     }
 
     return (
@@ -52,10 +52,12 @@ function TeamMembersForm (props) {
                 </label>
 
                 <div className='build'>
-                    <button disabled
+                    <button disabled={!data.name || !data.position || !data.email || !data.campus}>Submit!</button>
                 </div>
             </div>
 
         </form>
     )
 }
+
+export default TeamMembersForm

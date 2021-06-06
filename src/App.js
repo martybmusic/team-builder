@@ -44,7 +44,7 @@ function App() {
       />
       {
       teamMembers.map(member => {
-        return (<TeamMember key={member.id} details={member} />)
+        return (<TeamMembers key={member.id} details={member} />)
         })}
     </div>
   );
