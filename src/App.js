@@ -37,6 +37,15 @@ function App() {
       <header className="App-header">
         <h1>Our Team</h1>
       </header>
+      <TeamMembersForm
+        update={updateForm}
+        build={buildForm}
+        data={formData}
+      />
+      {
+      teamMembers.map(member => {
+        return (<TeamMember key={member.id} details={member} />)
+        })}
     </div>
   );
 }
