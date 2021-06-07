@@ -20,8 +20,8 @@ function TeamMembersForm (props) {
                     <input
                         type='text'
                         name='name'
-                        changeData={changeData}
-                        data={data.name}
+                        onChange={changeData}
+                        value={data.name}
                 />
                 </label>
 
@@ -29,8 +29,8 @@ function TeamMembersForm (props) {
                     <input
                         type='text'
                         name='position'
-                        changeData={changeData}
-                        data={data.position}
+                        onChange={changeData}
+                        value={data.position}
                 />
                 </label>
 
@@ -38,13 +38,13 @@ function TeamMembersForm (props) {
                     <input
                         type='email'
                         name='email'
-                        changeData={changeData}
-                        data={data.email}
+                        onChange={changeData}
+                        value={data.email}
                 />
                 </label>
 
                 <label>Campus
-                    <select value={data.campus} name='campus' changeData={changeData}>
+                    <select value={data.campus} name='campus' onChange={changeData}>
                         <option value=''>--- select your campus ---</option>
                         <option value='San Diego'>San Diego</option>
                         <option value='Mpls'>Minneapolis</option>
